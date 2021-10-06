@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>videojs-contrib-hls embed</title>
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+<body>
+
+  <video id="my_video_1" class="vjs-default-skin">
+  <source src="https://selphoutputcontainer.s3.amazonaws.com/abr/imprint-2021-08-2513:11:183g_4.m3u8" 
+    
+    type='application/vnd.apple.mpegurl' >
+  </video>
+  
+
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming/dist/videojs-http-streaming.js"></script>
+  
+ <script>
+// videojs.Vhs.xhr.beforeRequest = function(options) {
+//   /*
+//    * Modifications to requests that will affect every player.
+//    */
+
+//    options.headers =  {
+
+//     headers: {
+//         "Access-Control-Allow-Origin": "*"
+//     }
+// }
+
+
+//   return options;
+// };
+// https://selphoutputcontainer.s3.amazonaws.com/hls/imprint-2021-08-2516%3A29%3A243g_4.m3u8
+
+var player = videojs('my_video_1')
+player.play();
+
+</script> 
+  
+</body>
+</html>
